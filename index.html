@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">MyPortfolio</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Your Name</h1>
+        <h2 class="hero-title">Your Job Title</h2>
+        <p class="hero-description">
+          A passionate professional who builds meaningful and impactful
+          experiences. Let's create something great together.
+        </p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-avatar">
+          <img src="assets/avatar.jpg" alt="Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="avatar-placeholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Welcome to my portfolio! I am a dedicated professional with a
+              passion for delivering high-quality results. I bring a combination
+              of technical expertise and creative thinking to every project I
+              undertake.
+            </p>
+            <p>
+              With years of experience in my field, I have developed strong
+              skills that allow me to tackle complex challenges and deliver
+              solutions that make a difference. I am always looking to learn and
+              grow, staying up-to-date with the latest trends and technologies.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number" data-target="5">0</span>+
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="30">0</span>+
+                <span class="stat-label">Projects Done</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-target="20">0</span>+
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+            <a href="assets/resume.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <strong>Name</strong>
+                <span>Your Full Name</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>your@email.com</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Your City, Country</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <strong>Availability</strong>
+                <span class="available">Open to Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+
+        <div class="skills-categories">
+
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Skill One</span><span>90%</span>
+                </div>
+                <div class="bar"><div class="fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Skill Two</span><span>80%</span>
+                </div>
+                <div class="bar"><div class="fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Skill Three</span><span>75%</span>
+                </div>
+                <div class="bar"><div class="fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Skill Four</span><span>70%</span>
+                </div>
+                <div class="bar"><div class="fill" data-width="70"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-lightbulb"></i> Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Time Management</span>
+              <span class="tag">Critical Thinking</span>
+              <span class="tag">Adaptability</span>
+              <span class="tag">Creativity</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+            <div class="skill-tags">
+              <span class="tag">Tool One</span>
+              <span class="tag">Tool Two</span>
+              <span class="tag">Tool Three</span>
+              <span class="tag">Tool Four</span>
+              <span class="tag">Tool Five</span>
+              <span class="tag">Tool Six</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <p class="section-subtitle">My professional journey</p>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Senior Position</h3>
+                  <span class="company"><i class="fa-solid fa-building"></i> Company Name</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="duration"><i class="fa-regular fa-calendar"></i> Jan 2023 – Present</span>
+                  <span class="badge current">Current</span>
+                </div>
+              </div>
+              <ul class="job-duties">
+                <li>Led a team of professionals to deliver key projects on time and within budget.</li>
+                <li>Developed and implemented strategies that improved overall efficiency by 25%.</li>
+                <li>Collaborated with cross-functional teams to drive innovation and process improvement.</li>
+                <li>Managed client relationships and ensured high levels of satisfaction.</li>
+              </ul>
+              <div class="tech-used">
+                <span>Tool A</span><span>Tool B</span><span>Tool C</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Mid-Level Position</h3>
+                  <span class="company"><i class="fa-solid fa-building"></i> Previous Company</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="duration"><i class="fa-regular fa-calendar"></i> Jun 2020 – Dec 2022</span>
+                </div>
+              </div>
+              <ul class="job-duties">
+                <li>Executed complex projects from planning through delivery, meeting all deadlines.</li>
+                <li>Contributed to a 20% increase in team productivity through process improvements.</li>
+                <li>Mentored junior team members and conducted knowledge-sharing sessions.</li>
+              </ul>
+              <div class="tech-used">
+                <span>Tool D</span><span>Tool E</span><span>Tool F</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="job-title">Junior Position</h3>
+                  <span class="company"><i class="fa-solid fa-building"></i> First Company</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="duration"><i class="fa-regular fa-calendar"></i> Jul 2018 – May 2020</span>
+                </div>
+              </div>
+              <ul class="job-duties">
+                <li>Supported senior team members on client-facing projects and deliverables.</li>
+                <li>Gained hands-on experience with industry-standard tools and methodologies.</li>
+                <li>Assisted in preparing reports, presentations, and documentation.</li>
+              </ul>
+              <div class="tech-used">
+                <span>Tool G</span><span>Tool H</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">My <span>Portfolio</span></h2>
+        <p class="section-subtitle">A selection of my recent work</p>
+
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="data">Data</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card" data-category="web">
+            <div class="card-img">
+              <img src="assets/project1.jpg" alt="Project One" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-diagram-project"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Web</span>
+              <h3>Project One</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="design">
+            <div class="card-img">
+              <img src="assets/project2.jpg" alt="Project Two" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-palette"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Design</span>
+              <h3>Project Two</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>Figma</span><span>UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="data">
+            <div class="card-img">
+              <img src="assets/project3.jpg" alt="Project Three" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-chart-bar"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Data</span>
+              <h3>Project Three</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>Python</span><span>Excel</span><span>Power BI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="web">
+            <div class="card-img">
+              <img src="assets/project4.jpg" alt="Project Four" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-globe"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Web</span>
+              <h3>Project Four</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>React</span><span>Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="design">
+            <div class="card-img">
+              <img src="assets/project5.jpg" alt="Project Five" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-vector-square"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Design</span>
+              <h3>Project Five</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>Illustrator</span><span>Branding</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-category="data">
+            <div class="card-img">
+              <img src="assets/project6.jpg" alt="Project Six" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="card-img-placeholder"><i class="fa-solid fa-database"></i></div>
+              <div class="card-overlay">
+                <a href="#" class="card-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="card-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-category">Data</span>
+              <h3>Project Six</h3>
+              <p>A brief description of what this project does and what problem it solves for its users.</p>
+              <div class="card-tags">
+                <span>SQL</span><span>Tableau</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's talk!</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <i class="fa-solid fa-envelope"></i>
+              <h4>Email</h4>
+              <a href="mailto:your@email.com">your@email.com</a>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-phone"></i>
+              <h4>Phone</h4>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Location</h4>
+              <span>Your City, Country</span>
+            </div>
+            <div class="contact-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name. Crafted with <i class="fa-solid fa-heart"></i> and lots of coffee.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
